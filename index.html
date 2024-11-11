@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Light Switch</title>
+</head>
+<body>
+  <!-- Image and Buttons -->
+  <img id="bulbImage" src="bulb_off.png" alt="Light Bulb" width="150">
+  <br>
+  <button onclick="turnOn()">Turn on the light</button>
+  <button onclick="turnOff()">Turn off the light</button>
+
+  <script>
+    // JavaScript to handle button click events
+    function turnOn() {
+      document.getElementById("bulbImage").src = "bulb_on.png"; // Path to the "on" image
+    }
+
+    function turnOff() {
+      document.getElementById("bulbImage").src = "bulb_off.png"; // Path to the "off" image
+    }
+  </script>
+</body>
+</html>
